@@ -34,22 +34,22 @@ def request(url):
 	return thing
 
 def translate(language, sms):
-	try:
-		language = language.split("-")[0]
+	# try:
+	# 	language = language.split("-")[0]
 
-		if not "en" in language:
-			api = (
-				"https://translate.yandex.net/api/v1.5/tr.json/translate?key=%s&text=%s&lang=en-%s"
-				% (
-					ya_key,
-					sms,
-					language
-				)
-			)
+	# 	if not "en" in language:
+	# 		api = (
+	# 			"https://translate.yandex.net/api/v1.5/tr.json/translate?key=%s&text=%s&lang=en-%s"
+	# 			% (
+	# 				ya_key,
+	# 				sms,
+	# 				language
+	# 			)
+	# 		)
 
-			sms = request(api).json()['text'][0]
-	except:
-		pass
+	# 		sms = request(api).json()['text'][0]
+	# except:
+	# 	pass
 
 	return sms
 

@@ -10,11 +10,11 @@ seconds_limits_album = 40000
 max_songs = 400
 telegram_file_api_limit = 1500000000
 telegram_audio_api_limit = 50000000
-db_file = "dwsongs.db"
+db_file = "mgsongs.db"
 loc_dir = "Songs/"
 ini_file = "settings.ini"
-photo = "example.png"
-bot_name = "DeezloaderAn0n_bot"
+photo = "avatar.jpg"
+bot_name = "Music_Geeks_Bot"
 api_chart = "https://api.deezer.com/chart"
 api_artist = "https://api.deezer.com/artist/%s"
 api_type1 = "https://api.deezer.com/search/{}/?q={}"
@@ -24,12 +24,12 @@ services_supported = ["spotify", "deezer"]
 comandss = ["start", "settings", "info", "shazam", "help"]
 settingss = ["quality", "tongue"]
 qualities = ["FLAC", "MP3_320", "MP3_256", "MP3_128"]
-send_image_track_query = "🎧 Track: %s \n👤 Artist: %s \n💽 Album: %s \n📅 Date: %s"
-send_image_album_query = "💽 Album: %s \n👤 Artist: %s \n📅 Date: %s \n🎧 Tracks amount: %d"
-send_image_artist_query = "👤 Artist: %s \n💽 Album numbers: %d \n👥 Fans on Deezer: %d"
+send_image_track_query = "🎧 Track: %s \n👤 Artist: %s \n💽 Album: %s \n📅 Date: %s\n📣 Channel: @Music_Geeks"
+send_image_album_query = "💽 Album: %s \n👤 Artist: %s \n📅 Date: %s \n🎧 Tracks amount: %d\n📣 Channel: @Music_Geeks"
+send_image_artist_query = "👤 Artist: %s \n💽 Album numbers: %d \n👥 Fans on Deezer: %d📣 Channel: @Music_Geeks"
 tags_query = "💽 Album: %s\n📅 Date: %s\n📀 Label: %s\n🎵 Genre: %s"
-info_msg = "🔺 Version: %s\n🔻 Name: @%s\n✒️ Creator: @%s\n💵 Donation: %s\n📣 Forum: %s\n👥 Users: %d\n⬇️ Total downloads: %d"
-send_image_playlist_query = "📅 Creation: %s \n👤 User: %s \n🎧 Tracks amount: %d"
+info_msg = "🔺 Version: %s\n🔻 Name: @%s\n✒️ Creator: @%s\n💵 Donation: %s\n📣 Forum: %s\n👥 Users: %d\n⬇️ Total downloads: %d\n📣 Channel: @Music_Geeks"
+send_image_playlist_query = "📅 Creation: %s \n👤 User: %s \n🎧 Tracks amount: %d\n📣 Channel: @Music_Geeks"
 insert_query = "INSERT INTO DWSONGS (id, query, quality) values ('%s', '%s', '%s')"
 where_query = "SELECT query FROM DWSONGS WHERE id = '{}' and quality = '{}'"
 user_exist = "SELECT chat_id FROM CHAT_ID where chat_id = '%d'"
@@ -37,7 +37,7 @@ share_message = "tg://msg?text=Start @%s for download all the songs which you wa
 start_message = "Welcome to @%s \nPress '/' to get commands list" % bot_name
 not_supported_links = "Sorry :( The bot doesn't support this link %s :("
 rate_link = "https://t.me/BotsArchive/298"
-end_message = "FINISHED :) Rate me here %s" % rate_link
+end_message = "FINISHED :) Follow me here: @Music_Geeks"
 
 help_message = (
 	"/start: Start the bot" +
